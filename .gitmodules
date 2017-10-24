@@ -1,8 +1,12 @@
 [submodule "uaa"]
+	path = uaa
 	url = https://github.com/slipp-hipster/jhipster_msa_uaa_exam.git
 [submodule "gateway"]
+	path = gateway
 	url = https://github.com/slipp-hipster/jhipster_msa_gateway_exam.git
 [submodule "app1"]
+	path = app1
 	url = https://github.com/slipp-hipster/jhipster_msa_app1_exam.git
 [submodule "app2"]
+	path = app2
 	url = https://github.com/slipp-hipster/jhipster_msa_app2_exam.git
