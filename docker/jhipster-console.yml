@@ -34,13 +34,13 @@ services:
     jhipster-console:
         image: jhipster/jhipster-console:v2.2.1
         environment:
-            - ELASTICSEARCH_URL=http://jhipster-elasticsearch:9200
+            - ELASTICSEARCH_URL=http://172.30.1.58:9200
         ports:
             - 5601:5601
     jhipster-import-dashboards:
         image: jhipster/jhipster-import-dashboards:v2.2.1
         environment:
-            - ELASTICSEARCH_URL=http://jhipster-elasticsearch:9200
+            - ELASTICSEARCH_URL=http://172.30.1.58:9200
 
 # Uncomment to use the log-data volume
 # volumes:
