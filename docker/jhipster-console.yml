@@ -4,6 +4,13 @@ services:
         image: jhipster/jhipster-elasticsearch:v2.2.1
         ports:
             - 9200:9200
+        environment:
+            - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+        ulimits:
+            memlock:
+                soft: -1
+                hard: -1
+        mem_limit: 1g
         # Uncomment this as well as the volume section down below
         # to have elasticsearch data persisted to a volume
         # you will need to create a named volume with `docker volume create log-data`
